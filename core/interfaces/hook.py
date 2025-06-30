@@ -1,8 +1,10 @@
 """This module defines the interface for hook providers."""
 
 from abc import abstractmethod
-from core.interfaces import Provider
+
 from core.enums import Result
+from core.interfaces import Provider
+
 
 class HookProvider(Provider):
     """Abstract base class for hook providers."""

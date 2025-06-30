@@ -3,6 +3,7 @@ to standardize"""
 
 from enum import Enum
 
+
 class Result(Enum):
     """Enumeration for arbitrary results."""
     SUCCESS = 0

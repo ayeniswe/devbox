@@ -1,8 +1,10 @@
 """Module containing the abstract base class for app providers."""
 
 from abc import abstractmethod
+
 from core.enums import Result
 from core.interfaces import Provider
+
 
 class AppProvider(Provider):
     """Abstract base class for app providers."""

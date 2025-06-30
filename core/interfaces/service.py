@@ -2,10 +2,13 @@
 This module defines the abstract base class for service providers.
 """
 from abc import abstractmethod
+
 from core.enums import Result
 from core.interfaces.base import Provider
 
+
 class ServiceProvider(Provider):
+
     @abstractmethod
     def setup(self) -> Result:
         """

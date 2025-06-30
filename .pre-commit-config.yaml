@@ -1,0 +1,38 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+        name: "Removing trailing whitespaces from all code"
+      - id: end-of-file-fixer
+        name: "Adding a new line to the EOF for all code"
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.12.1
+    hooks:
+      - id: ruff-check
+        name: "Linting python code"
+  - repo: https://github.com/google/yapf
+    rev: v0.43.0
+    hooks:
+      - id: yapf
+        name: "Formatting python code"
+  - repo: https://github.com/pycqa/isort
+    rev: 6.0.1
+    hooks:
+      - id: isort
+        name: "Sorting python imports"
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.16.1
+    hooks:
+      - id: mypy
+        name: "Static type checking python code"
+        language_version: python3.13
+        additional_dependencies:
+          - types-requests
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-yaml
+        name: "Validating yaml files"
+      - id: check-json
+        name: "Validating json files"
