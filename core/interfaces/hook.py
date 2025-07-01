@@ -3,7 +3,7 @@
 from abc import abstractmethod
 
 from core.enums import Result
-from core.interfaces import Provider
+from core.interfaces.base import Provider
 
 
 class HookProvider(Provider):
